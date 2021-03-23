@@ -1,0 +1,21 @@
+
+  [41;1m InvalidArgumentException [49;22m
+
+[39;1m  A CreatePostsTable class already exists.[39;22m
+
+  at [32mC:\xampp\htdocs\firstproject\vendor\laravel\framework\src\Illuminate\Database\Migrations\MigrationCreator.php[39m:[32m99[39m
+     95|             }
+     96|         }
+     97| 
+     98|         if (class_exists($className = $this->getClassName($name))) {
+  >  99|             throw new InvalidArgumentException("A {$className} class already exists.");
+    100|         }
+    101|     }
+    102| 
+    103|     /**
+
+  [33m1   [39m[39;1mC:\xampp\htdocs\firstproject\vendor\laravel\framework\src\Illuminate\Database\Migrations\MigrationCreator.php[39;22m:[39;1m59[39;22m
+  [37m    Illuminate\Database\Migrations\MigrationCreator::ensureMigrationDoesntAlreadyExist("create_posts_table", "C:\xampp\htdocs\firstproject\database\migrations")[39m
+
+  [33m2   [39m[39;1mC:\xampp\htdocs\firstproject\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateMakeCommand.php[39;22m:[39;1m110[39;22m
+  [37m    Illuminate\Database\Migrations\MigrationCreator::create("create_posts_table", "C:\xampp\htdocs\firstproject\database\migrations", "posts")[39m
